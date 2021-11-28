@@ -1,0 +1,44 @@
+.Header {
+  height: 50px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 10px 0px gray;
+  border-radius: 5px;
+}
+.Nav {
+  height: 100%;
+}
+
+.List {
+  display: flex;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.List .NavLink {
+  display: inline-block;
+  margin-right: 20px;
+  width: 150px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 2px 5px;
+  margin: 0 0 0 7px;
+  color: lightseagreen;
+  background-color: grey;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 5px;
+}
+
+.List .NavLink:hover,
+.List .NavLink:focus {
+  background-color: teal;
+  color: lightgrey;
+}
+
+.List .active {
+  color: lightgrey;
+  font-weight: 900;
+}
