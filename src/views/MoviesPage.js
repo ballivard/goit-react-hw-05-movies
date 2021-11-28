@@ -4,7 +4,7 @@ import queryString from 'query-string';
 import api from '../api-service/api';
 import Button from '../components/Button';
 import MoviesGallery from '../components/MoviesGallery';
-import MyLoader from '../components/MyLoader';
+import MainLoader from '../components/MainLoader';
 import Notification from '../components/Notification';
 import SearchBar from '../components/SearchBar';
 
@@ -85,7 +85,7 @@ class MoviesPage extends Component {
         <SearchBar onSubmit={this.handleFormData} />
         {error && <Notification message="Something wrong :(" />}
         {movies[0] && <MoviesGallery movies={movies} />}
-        {loader && <MyLoader />}
+        {loader && <MainLoader />}
         {showButtons && (
           <>
             {page === 1 ? (

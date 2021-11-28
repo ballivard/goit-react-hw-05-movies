@@ -5,7 +5,7 @@ import api from '../api-service/api';
 import Button from '../components/Button';
 import Cast from '../components/MovieDetails/Cast';
 import MovieDetails from '../components/MovieDetails';
-import MyLoader from '../components/MyLoader';
+import MainLoader from '../components/MainLoader';
 import Notification from '../components/Notification';
 import Reviews from '../components/MovieDetails/Reviews';
 import styles from './MovieDetailsPage.module.css';
@@ -45,7 +45,7 @@ class MovieDetailsPage extends Component {
     return (
       <>
         <Button name="<<< Go back" onClick={this.handlerOnButtonClick(from)} />
-        {loader && <MyLoader />}
+        {loader && <MainLoader />}
         {title ? (
           <MovieDetails
             title={title}

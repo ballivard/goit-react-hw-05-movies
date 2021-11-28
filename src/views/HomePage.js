@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import api from '../api-service/api';
 import Button from '../components/Button';
 import MoviesGallery from '../components/MoviesGallery';
-import MyLoader from '../components/MyLoader';
+import MainLoader from '../components/MainLoader';
 import Notification from '../components/Notification';
 
 class HomePage extends Component {
@@ -53,7 +53,7 @@ class HomePage extends Component {
       <>
         {error && <Notification message="Something wrong :(" />}
         <MoviesGallery movies={movies} />
-        {loader && <MyLoader />}
+        {loader && <MainLoader />}
         {showButtons && (
           <>
             {page === 1 ? (
